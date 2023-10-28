@@ -7,5 +7,13 @@
   {% csrf_token %}
   <p>Are you sure you want to sign out?</p>
   {% include "account/_button.html" with text="Sign out" %}
+  
+  <div class="flex justify-center mt-6 text-sm">
+    <a class="text-blue-400 hover:text-blue-500" href="/">Home</a>
+  </div>
+  
+
+
+
 </form>
 {% endblock %}

@@ -17,11 +17,11 @@ Sign in
   {% for field in form.visible_fields %}
     {% if field.name != "remember" %}
     <div class="mb-4">
-    {{ field|add_label_class:"font-semibold text-xs" }}
+    {{ field|add_label_class:"text-sm" }}
     {% if field.errors %}
-    {% render_field field class="flex items-center w-64 h-12 px-4 pb-2 mt-2 border-red-500 rounded focus:outline-none focus:ring-2" %}
+    {% render_field field class="w-full text-sm px-4 py-3 rounded outline-none border-2 focus:border-blue-500" %}
     {% else %}
-    {% render_field field class="flex items-center w-64 h-12 px-4 pb-2 mt-2 rounded focus:outline-none focus:ring-2" %}
+    {% render_field field class="w-full text-sm px-4 py-3 rounded outline-none border-2 focus:border-blue-500" %}
     {% endif %}
     {% for error in field.errors %}
     <span class="flex items-center max-w-xs mt-1 ml-1 text-xs font-medium tracking-wide text-red-500">
